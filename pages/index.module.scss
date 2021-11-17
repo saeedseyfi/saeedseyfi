@@ -3,6 +3,7 @@
 
 .main {
   background: gray;
+  color: rgba(0,0,0,0.9);
 }
 
 .frame {
@@ -30,17 +31,22 @@
   justify-content: center;
 }
 
+.title,
+.subtitle {
+  text-shadow: 0 1px 1px white;
+}
+
 .title {
   font-family: "Nothing You Could Do", serif;
   font-size: 3rem;
   margin: 0 0 -1rem;
-  text-shadow: 0 1px 1px white;
   position: relative;
 }
 
 .subtitle {
   font-family: Merriweather, serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  color: #ba2827;
   margin: 0 0 1rem;
 }
 
@@ -53,11 +59,21 @@
   .logo {
     padding: 0 7%;
   }
+
+  .subtitle {
+    text-align: start;
+    margin-bottom: 2rem;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
   .frame,
-  .logo {
+  .logo,
+  .subtitle {
     filter: invert(1);
+  }
+
+  .subtitle {
+    text-shadow: 0 1px 1px black;
   }
 }
