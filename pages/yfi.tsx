@@ -1,16 +1,15 @@
 import React, {useEffect} from 'react'
 import Head from 'next/head'
-
 import {Intro} from "../lib/components/Intro";
 import {useRouter} from "next/router";
 
 
-const Home = () => {
+const Yfi = () => {
     const router = useRouter();
 
     useEffect(() => {
-        if (location.host === 'saeed.se') {
-            router.replace('/yfi');
+        if(location.host !== 'saeed.se') {
+            router.replace('/');
         }
     })
 
@@ -26,4 +25,4 @@ const Home = () => {
     );
 };
 
-export default Home
+export default Yfi
