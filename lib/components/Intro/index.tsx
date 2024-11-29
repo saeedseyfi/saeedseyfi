@@ -13,7 +13,7 @@ export const Intro = () => (
 
                 <div className={styles.info}>
                     <h1 className={styles.title}>Saeed Seyfi</h1>
-                    <h2 className={styles.subtitle}>JavaScript Engineer</h2>
+                    <h2 className={styles.subtitle}>Software Engineer</h2>
 
                     <a href="mailto:me@saeedseyfi.com">me@saeedseyfi.com</a>
                 </div>
